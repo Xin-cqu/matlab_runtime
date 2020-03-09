@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER Xin Wen <nclxwen@gmail.com>
 RUN apt-get update && apt-get install -y python-dev python-setuptools python-numpy python-scipy zlib1g-dev python-matplotlib 
 #RUN easy_install pip
-RUN apt-get install -y libpng-dev libfreetype6-dev pkg-config zip wget
+RUN apt-get install -y libpng-dev libfreetype6-dev pkg-config zip wget gcc
 # python-vtk
 RUN mkdir /mcr-install
 WORKDIR /mcr-install
